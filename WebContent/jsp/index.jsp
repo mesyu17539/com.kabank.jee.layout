@@ -1,21 +1,58 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
-<%@ include file="common/header.jsp" %>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>예제종목</title>
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<script src="../js/index.js"></script>
+</head>
 <body>
-	<table id="wrapper">
-		<tr style="height: 10%">
-			<th colspan="5"><a href="#">HOME</a></th>
-		</tr>
-		<tr style="height: 90%">
-			<td colspan="5" style="width: 300px; height: 200px; margin: 0 auto;">
+<div id="wrapper">
+<header id="index_header">
+	홈즈
+</header>
+<section id="index_section">
+	<article>
+		<table id="index_table">
+			<tr>
+				<th colspan="5"><a href="#">HOME</a></th>
+			</tr>
+			<tr>
+				<td colspan="5">
 				<form action="burgerking/main.jsp">
-					<table id="login">
+					<table id="index_login_box">
 						<tr>
-							<td><input type="text" placeholder="id" tabindex="1"/></td>
-							<td rowspan="2"><input id="login-box" type="submit" value="로그인" tabindex="3"/></td>
+							<td><input id="index_input_id" type="text" placeholder="id" tabindex="1"/></td>
+							<td rowspan="2"><input id="index_input_btn" type="submit" value="로그인" tabindex="3"/></td>
 						</tr>
 						<tr>
-							<td><input type="password" placeholder="pass" tabindex="2"/></td>
+							<td><input id="index_input_password" type="password" placeholder="pass" tabindex="2"/></td>
 						</tr>
 					</table>
 				</form>
-<%@ include file="common/foor.jsp" %>
+				<!-- 
+				<a href="member/join.jsp" onmouseover="마우스 올림">
+					회원가입???
+				</a>
+				<p onclick=showAlert();>
+					처음 오셨나요
+				</p>
+				 -->
+				<a id="click_me" href="#">
+					처음 오셨나요 
+				</a>
+				<a id="click_admin" href="#">
+					관리자
+				</a>
+				</td>
+			</tr>
+		</table>
+	</article>
+</section>
+</div>
+<%@ include file="common/foorter.jsp" %>
+</body>
+</html>

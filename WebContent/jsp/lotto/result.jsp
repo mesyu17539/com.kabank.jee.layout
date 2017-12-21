@@ -1,9 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ include file="../common/header.jsp" %>
-<%@ include file="../common/top.jsp" %>
-<%@ include file="../common/navigation.jsp" %>
 <%@ page import="java.util.*" %>
 <%@ page import="com.kabank.jee.domain.LottoBean" %>
+<!doctype html>
+<html lang="en">
+<%@ include file="../common/head.jsp" %>
+<body>
+<%@ include file="../common/header.jsp" %>
+<%@ include file="../common/nav.jsp" %>
+<section>
 <%!
 	List<LottoBean> lotto;
 	public int countRow(String money){
@@ -54,4 +58,8 @@
 	}
 %>	
 </div>
-<%@ include file="../common/foor.jsp" %>
+</section>
+<aside></aside>
+<%@ include file="../common/foorter.jsp" %>
+</body>
+</html>

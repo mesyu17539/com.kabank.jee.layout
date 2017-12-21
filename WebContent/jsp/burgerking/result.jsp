@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ include file="../common/header.jsp" %>
-<%@ include file="../common/top.jsp" %>
-<%@ include file="../common/navigation.jsp" %>
 <%@ page import="java.util.*" %>
 <%@ page import="com.kabank.jee.domain.BurgerkingBean" %>
 
@@ -12,6 +9,13 @@
 <jsp:useBean id="coffee" class="com.kabank.jee.domain.BurgerkingBean" scope="request" />
 <jsp:useBean id="salads" class="com.kabank.jee.domain.BurgerkingBean" scope="request" />
 <jsp:useBean id="bagle" class="com.kabank.jee.domain.BurgerkingBean" scope="request" />
+<!doctype html>
+<html lang="en">
+<%@ include file="../common/head.jsp" %>
+<body>
+<%@ include file="../common/header.jsp" %>
+<%@ include file="../common/nav.jsp" %>
+<section>
 <%
 hamberger.setMenu("햄버거");
 hamberger.setPrice(request.getParameter("hamberger"));
@@ -62,4 +66,8 @@ list.add(bagle);
 					<div style="margin-left: 22%;">
 					총 금액 <%=pay %>
 					</div>
-<%@ include file="../common/foor.jsp" %>
+</section>
+<aside></aside>
+<%@ include file="../common/foorter.jsp" %>
+</body>
+</html>
