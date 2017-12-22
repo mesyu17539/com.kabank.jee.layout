@@ -12,4 +12,5 @@
 <aside></aside>
 <%@ include file="../common/foorter.jsp" %>
 </body>
+<script src="../../js/lotto.js" ></script>
 </html>

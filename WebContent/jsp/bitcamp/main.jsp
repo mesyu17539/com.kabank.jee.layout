@@ -12,4 +12,5 @@
 </section>
 <%@ include file="../common/foorter.jsp" %>
 </body>
+<script src="../../js/bitcam.js" ></script>
 </html>

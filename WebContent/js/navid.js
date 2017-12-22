@@ -1,7 +1,7 @@
 /**
  * 
  */
-window.onload = function () {
+function init() {
 	var arr=['burgerking','kakao','lotto','sktelecom','bitcamp'];
 	for(var i = 0; i < arr.length ; i++){
 		document.querySelector('#'+arr[i]).addEventListener('click',
@@ -10,4 +10,4 @@ window.onload = function () {
 		},false);
 	}
 }
-window.addEventListener("load",init,false)
+window.addEventListener("load",init,false);

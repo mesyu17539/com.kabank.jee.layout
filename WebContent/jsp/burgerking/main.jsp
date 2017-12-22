@@ -96,7 +96,7 @@
 					<input type="hidden" name="coffee" value="600"/>
 					<input type="hidden" name="salads" value="1000"/>
 					<input type="hidden" name="bagle" value="2000"/>
-					<input id="bkmenu_input_btn" type="submit" value="전 송" /><br />
+					<input id="order_btn" type="submit" value="전 송" /><br />
 				</td>
 			</tr>
 		</table>
@@ -109,5 +109,5 @@
 <%@ include file="../common/foorter.jsp" %>
 </body>
 <link rel="stylesheet" href="../../css/burgerking.css">
-<script src="../../js/burgerKing.js" ></script>
+<script src="../../js/burger.js" ></script>
 </html>

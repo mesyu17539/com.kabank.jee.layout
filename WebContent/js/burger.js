@@ -9,5 +9,8 @@ window.onload = function () {
 			location.href ="../"+this.id+"/main.jsp";
 		},false);
 	}
+	document.querySelector('#order_btn').addEventListener('click',
+			function(e) {
+				document.querySelector('#order_form').submit();
+			},false);
 }
-window.addEventListener("load",init,false)

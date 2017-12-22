@@ -5,6 +5,13 @@ function init() {
 	var goJoinLink = document.querySelector('#go_join_link');
 	var goAdminLink = document.querySelector('#go_admin_link');
 	var indexInputBtn = document.querySelector('#index_input_btn');
+	var arr=['burgerking','kakao','lotto','sktelecom','bitcamp'];
+	for(var i = 0; i < arr.length ; i++){
+		document.querySelector('#'+arr[i]).addEventListener('click',
+				function(e){
+			location.href ="../"+this.id+"/main.jsp";
+		},false);
+	}
 	goJoinLink.addEventListener("click",goJoin,false);
 	goAdminLink.addEventListener("click",goAdmin,false);
 	indexInputBtn.addEventListener("click",indexLogin,false);

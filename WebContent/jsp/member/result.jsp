@@ -11,13 +11,13 @@
 <section>
 <%
 member.setAddr(request.getParameter("addr"));
-member.setEmail(request.getParameter("email"));
+member.setEmail(request.getParameter("email")+request.getParameter("url"));
 member.setId(request.getParameter("id"));
 member.setName(request.getParameter("name"));
 member.setPass(request.getParameter("pass"));
 member.setPhone(request.getParameter("phone"));
 /* member.setProfile(request.getParameter("addr")); */
-member.setSsn(request.getParameter("ssn1")+"-"+request.getParameter("ssn2").charAt(0));
+/* member.setSsn(request.getParameter("ssn1")+"-"+request.getParameter("ssn2").charAt(0)); */
 
 List<MemberBean> list = new ArrayList<>();
 list.add(member);
