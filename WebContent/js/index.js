@@ -38,7 +38,7 @@ function goAdmin() {/* method 처럼 카멜 표기법으로 할 것 */
 	var admin = confirm('관리자입니까?');
 	if(admin){
 		alert('안녕하세요 관리자 '+name);
-		location.href="burgerking/main.jsp";
+		location.href="admin/main.jsp";
 	}else{
 		alert('관리자만 접근 가능합니다');
 	}
